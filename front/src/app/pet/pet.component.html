@@ -2,7 +2,7 @@
     <div class="col-md-6">
 	    <div class='form-group'>
 	        <label for="newInfo">Buscar:</label>
-	        <input class='form-control' #newInfo (keyup.enter)="buscar(newInfo.value)">
+	        <input class='form-control' #newInfo (keyup.enter)="buscar(newInfo.value)" placeholder="Pesquise por nome, raça, dono">
 	    </div>
 	    <div [innerHtml]="suggestion" class="text-danger">
 		</div>
