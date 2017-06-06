@@ -30,7 +30,7 @@ Foi desenvolvida uma API em rails 5 com sistema de busca inteligente, consumida 
 3. Instale o pacote: ``` sudo dpkg -i elasticsearch-5.0.0.deb```
 4. Vamos dar o start no ElasticSearch, primeiro rode: ```ps -p 1```
    
-![alt text](https://i1.wp.com/onebitcode.com/wp-content/uploads/2016/11/Captura-de-tela-de-2016-11-05-00-16-01.png?resize=330%2C53)
+![alt text](https://github.com/flaviolpgjr/desafio_petshop/blob/master/images/img4.png)
 
   Caso o resultado seja como na imagem, rode: ```sudo systemctl start elasticsearch.service```
   Caso o resultado seja “init”, rode: ```sudo -i service elasticsearch start```
