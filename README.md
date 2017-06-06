@@ -61,7 +61,7 @@ Não se esqueça de manter o terminal aberto.
 3. Inicie o aplicativo: ``` ng serve --open ```
 
 ----------
-#### TO-DO
+#### Melhorias que gostaria de ter adicionado
 - Melhorar a experiência de usuário na pesquisa, trabalhando com os termos mais pesquisados.
 - Melhorar a inteligência da sugestão. 
 
