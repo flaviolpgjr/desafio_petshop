@@ -65,3 +65,11 @@ Não se esqueça de manter o terminal aberto.
 - Melhorar a experiência de usuário na pesquisa, trabalhando com os termos mais pesquisados.
 - Melhorar a inteligência da sugestão. 
 
+----------
+#### Imagens do aplicativo em funcionamento
+Busca por nome
+![alt text](https://github.com/flaviolpgjr/desafio_petshop/blob/master/images/img1.png)
+Busca por nome, raça e dono
+![alt text](https://github.com/flaviolpgjr/desafio_petshop/blob/master/images/img3.png)
+Usuário digitou a palavra pastor errado, repare que ele identificou que o usuario queria digitar pastor, e sugeriu a correção.
+![alt text](https://github.com/flaviolpgjr/desafio_petshop/blob/master/images/img2.png)
