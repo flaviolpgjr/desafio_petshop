@@ -22,7 +22,7 @@ Foi desenvolvida uma API em rails 5 com sistema de busca inteligente, consumida 
 - Ruby 2.3.3 - [Instalação](https://gorails.com/setup/ubuntu/14.04#ruby)
 - Rails 5.0.2 - [Instalação](https://gorails.com/setup/ubuntu/14.04#rails)
 - Angular CLI - [Instalação & Requisitos](https://github.com/angular/angular-cli#installation)
-- Elasticsearch - [Instalação Elasticsearch & Requisitos]
+- Elasticsearch - [Instalação Elasticsearch & Requisitos](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
 
 #### Instalação Elasticsearch
 1. Primeiro instale o Java (É uma dependência do ElasticSearch): ``` sudo apt-get install default-jdk ```
@@ -48,7 +48,6 @@ Foi desenvolvida uma API em rails 5 com sistema de busca inteligente, consumida 
 5. Para gerar os cachorros é necessario que o elasticsearch esteja rodando, gere através: ``` rake pet:gen ```
 
 > Para gerar os cachorros foi gerada uma task que faz o parse no site através da lib Nokogiri, e armazena as raças no array, é utilizada a gem Faker para gerar
->
 >dados aleatórios para povoar o banco.
 
 6. Por ultimo start o servidor, através do comando: ``` rails server ``` ou ``` rails s ```
