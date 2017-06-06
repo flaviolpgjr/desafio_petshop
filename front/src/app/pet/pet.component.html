@@ -1,0 +1,58 @@
+<div class='container'>
+    <div class="col-md-6">
+	    <div class='form-group'>
+	        <label for="newInfo">Buscar:</label>
+	        <input class='form-control' #newInfo (keyup.enter)="buscar(newInfo.value)">
+	    </div>
+	    <div [innerHtml]="suggestion" class="text-danger">
+		</div>
+	</div>
+	<div class="col-md-6">
+		<i class="fa fa-search" aria-hidden="true" (click)="buscar(newInfo.value)"></i>
+	</div>
+
+    <table class="table table-striped">
+	    <thead>
+		    <tr>
+			    <th><i class="fa fa-paw" aria-hidden="true"></i>
+				Nome</th>
+			    <th><i class="fa fa-paw" aria-hidden="true"></i>
+				Raça</th>
+			    <th><i class="fa fa-user" aria-hidden="true"></i>
+				Dono</th>
+			    <th><i class="fa fa-venus-mars" aria-hidden="true"></i>
+				Genero</th>
+			    <th>Castrado</th>
+			    <th><i class="fa fa-phone" aria-hidden="true"></i>
+				Telefone</th>
+			    <th><i class="fa fa-calendar" aria-hidden="true"></i>
+				Ultima Visita</th>
+			    <th>
+			    <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+				Aniversario</th>
+		    </tr>
+	    </thead>
+	    <tbody>
+		    <tr *ngFor="let pet of pets | paginate: { itemsPerPage: 15, currentPage: p }">
+			    <td>{{pet.name}}</td>
+			    <td>{{pet.breed}}</td>
+			    <td>{{pet.owner_name}}</td>
+			    <td>{{pet.genre}}</td>
+			    <td class="text-center"><span class="glyphicon glyphicon-{{pet.castrated && 'ok' || 'remove'}}" aria-hidden="true"></span></td>
+			    <td>{{pet.owner_phone}}</td>
+			    <td>{{pet.last_time | date: 'dd/MM/yyyy'}}</td>
+			    <td>{{pet.birth | date: 'dd/MM/yyyy'}}</td>
+
+		    </tr>
+		</tbody>
+    </table>
+    <pagination-controls (pageChange)="p = $event"
+    	previousLabel="Anterior"
+      	nextLabel="Proximo">
+    </pagination-controls>
+</div>
+
+
+
+
+
